@@ -29,7 +29,7 @@ This tiny library allows you to perform basic operations on Version objects, con
         matcherMatches(new VersionRange("0.8.0", "2.0.0"), new Version("1.0.0"));
     }
 
-    //This method was created to show you, that botj VersionPattern and VersionRange implements Predicate<Version>
+    //This method was created to show you, that both VersionPattern and VersionRange implements Predicate<Version>
     private static boolean matcherMatches(Predicate<Version> matcher, Version version) {
         return matcher.test(version);
     }
